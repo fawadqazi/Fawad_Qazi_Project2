@@ -1,0 +1,53 @@
+$primary-color: #2c2c2c;
+$primary-background: #f0efed;
+$accent-color: #05afc1;
+
+@mixin heading-text($size){
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 92px;
+   font-size: $size;
+}
+
+@mixin page-header($size, $letter-spacing){
+   font-family: 'Lora', serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: $size;
+   letter-spacing: $letter-spacing;
+}
+
+@mixin flex-type($direction, $justify-content, $align-item, $wrap){
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify-content;
+   align-items: $align-item;
+   flex-wrap: $wrap;
+}
+
+@mixin div-style{
+   text-align: left;
+}
+
+html{
+   font-size: 62.5%;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+   font-size: 2rem;
+   line-height: 3.2rem;
+}
+
+ul{
+   margin: 0;
+   padding: 0;
+}
+
+img{
+   max-width: 100%;
+}
+
+
+
