@@ -13,9 +13,15 @@
       color: $primaryColor;
       display: inline-block;
       padding: 0 2rem;
+      &:hover{
+            color: #ffffff;
+      }
       &--logo{
          @include page-header(4.2rem);
          padding: 0 4rem;
+         }
+         &--logo:hover{
+               color: $primaryColor;
          }
       }
 }
@@ -44,7 +50,16 @@
 }
 
 .header__inner{
-      min-height: 50vh;
-      background: url('../assets/blog-image-1.jpg') no-repeat;
-      background-size: cover;
+      &--blog, &--contact{
+            min-height: 50vh;
+      }
+      &--blog{
+            background: url('../assets/blog-image-1.jpg') no-repeat;
+            background-size: cover;
+      }
+      &--contact{
+            background: url('../assets/contact-image-1.jpg') no-repeat;
+            background-size: cover;
+      }
+      
 }

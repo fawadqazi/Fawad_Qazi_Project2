@@ -28,6 +28,7 @@
    &--form{
       [type="text"], [type="email"], textarea{
          padding: 1.5rem 3rem;
+         border: none
       }
       [type="text"], [type="email"]{
          width: calc(50% - 3px);
@@ -37,9 +38,17 @@
          width: 100%;
       }
 
+      [type="text"]:focus, [type="email"]:focus, textarea:focus{
+         border: 1px solid $accentColor;
+      }
+
+      [type="submit"]:hover{
+         background: #ffffff;
+         border: 1px solid $accentColor;
+      }
+
       textarea{
          margin: 2rem 0;
-         border: none;
          resize: none;
       }
 
