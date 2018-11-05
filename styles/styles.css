@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -131,6 +132,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
 
 html {
   font-size: 62.5%; }
@@ -273,11 +287,33 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 92px;
-    font-size: 8rem; }
+    font-size: 8rem;
+    position: relative;
+    bottom: 5.5rem; }
   .section__primary--inner-div {
     background: #ffffff;
     padding: 4rem 4rem;
-    border-bottom: 4px solid #f6a823; }
+    border-bottom: 4px solid #f6a823;
+    margin-bottom: 4rem; }
+  .section__primary--form [type="text"], .section__primary--form [type="email"], .section__primary--form textarea {
+    padding: 1.5rem 3rem; }
+  .section__primary--form [type="text"], .section__primary--form [type="email"] {
+    width: calc(50% - 3px); }
+  .section__primary--form [type="submit"], .section__primary--form textarea {
+    width: 100%; }
+  .section__primary--form textarea {
+    margin: 2rem 0;
+    border: none;
+    resize: none; }
+  .section__primary--form textarea::-webkit-input-placeholder, .section__primary--form [type="text"]::-webkit-input-placeholder, .section__primary--form [type="email"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #2c2c2c;
+    font-style: italic; }
+  .section__primary--form textarea::-moz-placeholder, .section__primary--form [type="text"]::-moz-placeholder, .section__primary--form [type="email"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #2c2c2c;
+    opacity: 1;
+    font-style: italic; }
 
 .container {
   padding: 10rem 0; }
@@ -436,10 +472,87 @@ a {
 
 .inner-div__info {
   font-style: italic; }
+  .inner-div__info--margin {
+    margin: 0; }
 
 .inner-div__author {
   color: #285e64;
   font-weight: bold; }
+
+.blog-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+  .blog-comment__content {
+    width: 80%; }
+  .blog-comment__text {
+    margin: 0; }
+  .blog-comment__one {
+    border-bottom: none;
+    margin-bottom: 2rem; }
+
+.aside__inner-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 10rem; }
+  .aside__inner-page .aside__blog {
+    background: #ffffff;
+    padding: 3rem;
+    margin-bottom: 2rem; }
+    .aside__inner-page .aside__blog--img {
+      max-width: 100%; }
+    .aside__inner-page .aside__blog--heading {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #2c2c2c;
+      font-size: 2.4rem; }
+    .aside__inner-page .aside__blog--link {
+      color: #285e64;
+      font-weight: bold; }
+    .aside__inner-page .aside__blog--list {
+      margin: 2rem 0;
+      padding: 0 0 0 2rem;
+      list-style: none; }
+    .aside__inner-page .aside__blog--list-item::before {
+      content: "•";
+      margin-right: 1rem;
+      color: #f6a823; }
+
+.inner_aside, .inner__div {
+  margin: 0 2rem; }
+
+.inner_aside {
+  width: 35%; }
+
+.inner__div {
+  width: 65%; }
 
 .footer__common {
   background: #2c2c2c; }

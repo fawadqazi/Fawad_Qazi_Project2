@@ -1,11 +1,7 @@
 .section__primary{
    background: $primaryBackground;
    &--flex{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      @include flex-type(row, center, center, wrap);
    }
    &--img{
       width: 35%;
@@ -20,13 +16,44 @@
    }
    &--inner-heading{
       @include page-header(8rem);
+      position: relative;
+      bottom: 5.5rem;
    }
    &--inner-div{
       background: #ffffff;
       padding: 4rem 4rem;
       border-bottom: 4px solid $secondaryBackground;
+      margin-bottom: 4rem;
    }  
-   
+   &--form{
+      [type="text"], [type="email"], textarea{
+         padding: 1.5rem 3rem;
+      }
+      [type="text"], [type="email"]{
+         width: calc(50% - 3px);
+      }
+
+      [type="submit"], textarea{
+         width: 100%;
+      }
+
+      textarea{
+         margin: 2rem 0;
+         border: none;
+         resize: none;
+      }
+
+      textarea::-webkit-input-placeholder,[type="text"]::-webkit-input-placeholder,[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+         color: $primaryColor;
+         font-style: italic;
+      }
+
+      textarea::-moz-placeholder,[type="text"]::-moz-placeholder,[type="email"]::-moz-placeholder { /* Firefox 19+ */
+         color: $primaryColor;
+         opacity: 1;
+         font-style: italic;
+      }
+   }
 }
 
 .container{
@@ -132,12 +159,75 @@
    }
    &__info{
       font-style: italic;
+      &--margin{
+      margin: 0;
+   }
    }
    &__author{
       color: #285e64;
       font-weight: bold;
    }
 }
+
+.blog-comment{
+   @include flex-type(row, flex-start, normal, nowrap);
+   &__content{
+      width: 80%;
+   }
+   &__text{
+      margin: 0;
+   }
+
+   &__one{
+      border-bottom: none;
+      margin-bottom: 2rem;
+   }
+   
+}
+
+.aside__inner-page{
+   @include flex-type(row, flex-start, normal, nowrap);
+   padding-bottom: 10rem;
+   .aside__blog{
+      background: #ffffff;
+      padding: 3rem;
+      margin-bottom: 2rem;
+      &--img{
+         max-width: 100%;
+      }
+      &--heading{
+         @include heading-text(2.4rem);
+      }
+      &--link{
+         color: #285e64;
+         font-weight: bold;
+      }
+      &--list{
+         margin: 2rem 0;
+         padding: 0 0 0 2rem;
+         list-style: none;
+      }
+      &--list-item::before{
+          content: "•";
+          margin-right: 1rem;
+          color: $secondaryBackground;
+      }
+   }
+}
+
+.inner_aside, .inner__div{
+   margin: 0 2rem;
+}
+
+.inner_aside{
+   width: 35%;
+}
+
+.inner__div{
+   width: 65%;
+}
+
+
 
 
 
