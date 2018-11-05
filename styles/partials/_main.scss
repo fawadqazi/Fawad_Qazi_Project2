@@ -1,0 +1,121 @@
+.section__primary{
+   background: $primaryBackground;
+   &--flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+   &--img{
+      width: 35%;
+      padding: 10rem 0;
+      img{
+         box-shadow: 1.5rem 1.5rem $secondaryBackground;
+      }
+      
+   }
+   &--flex-width{
+      width: 65%;
+   }
+}
+
+.container{
+   padding: 10rem 0;
+   &__heading{
+      @include heading-text(4.2rem);
+   }
+   &__button{
+      background: $accentColor;
+      padding: 1.3rem 4rem;
+      @include heading-text(2rem);
+   }
+   &__content{
+      margin: 4rem 0;
+   }
+}
+
+.section__articles{
+   @include flex-type(row, center, normal, wrap);
+   .container{
+      width: 50%;
+      padding: 6rem 0 4rem 0;
+      &__heading{
+      @include heading-text(3.2rem);
+      }
+      &--right{
+         text-align: right;
+      }
+      &__img{
+         max-width: 100%;      
+         position: relative;
+         bottom: 1rem;
+         right: 2rem;
+      }
+      &--rust,&--oyellow{
+         height: 100%;
+         padding: 0;
+         position: relative;
+      } 
+      &--rust{
+         background: #a82706;        
+      }
+      &--oyellow{
+         background: $secondaryBackground;
+         order: 1;
+         top: 5rem;
+      }
+   }
+}
+
+.section__icons{
+   @include flex-type(row, space-between, normal, wrap);
+   padding: 10rem 0 5rem 0;
+   .container{
+      @include flex-type(row, space-around, normal, nowrap);
+      padding: 0;
+      width: calc(50% - 2%);
+      div{
+         margin-left: 4%;
+      }
+      &__heading{
+         @include heading-text(3.2rem);
+      }
+      &__content{
+         margin: 2rem 0 4rem 0;
+      }  
+      &__icon{
+         padding: 1rem;
+         background: $secondaryBackground;
+         border-radius: 50%;
+         color: $primaryColor;
+      }
+   }
+}
+
+.section__chairs{
+   background: url('../assets/home-image-4.jpg') no-repeat center center;
+   width: 100%;
+   min-height: 70vh;
+   background-size: cover;   
+}
+
+.section__gallery{
+   &--flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 5rem auto;
+
+   }
+   &--img{
+      width: calc(33% - 4%);
+      margin: 2%;
+      max-width: 100%;
+   }
+}
+
+
+

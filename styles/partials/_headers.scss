@@ -1,0 +1,43 @@
+.header__home{
+   min-height: 80vh;
+   background: #f6a823;
+}
+
+.nav{
+   list-style: none;
+   @include flex-type(row, center, center, wrap);
+   &__link{
+      @include heading-text(20px);
+      line-height: 2.9rem;
+      color: $primaryColor;
+      display: inline-block;
+      padding: 0 2rem;
+      &--logo{
+         @include page-header(4.2rem);
+         padding: 0 4rem;
+         }
+      }
+}
+
+.header__container{
+   @include flex-type(row, spaced-around, center, wrap);
+}
+
+.header__content{
+   &--heading{
+      width: 60%;
+      background: url('../assets/circle-text.png') no-repeat;
+   }
+   &__heading{
+      @include page-header(13rem);
+      margin: 8rem 0 8rem 5rem;
+   }
+   &--image{
+      width: 40%;
+      position: relative;
+      top: 5rem;  
+   }
+   &__img{
+         box-shadow: 1.5rem 1.5rem white;
+   }
+}

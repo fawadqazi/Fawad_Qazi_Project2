@@ -1,28 +1,30 @@
-$primary-color: #2c2c2c;
-$primary-background: #f0efed;
-$accent-color: #05afc1;
+$primaryColor: #2c2c2c;
+$primaryBackground: #f0efed;
+$secondaryBackground: #f6a823;
+$accentColor: #05afc1;
 
 @mixin heading-text($size){
    font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: $primaryColor;
+   font-size: $size;
+}
+
+@mixin page-header($size){
+   font-family: 'Lora', serif;
    font-weight: bold;
    text-transform: uppercase;
    line-height: 92px;
    font-size: $size;
 }
 
-@mixin page-header($size, $letter-spacing){
-   font-family: 'Lora', serif;
-   font-weight: bold;
-   text-transform: uppercase;
-   font-size: $size;
-   letter-spacing: $letter-spacing;
-}
-
-@mixin flex-type($direction, $justify-content, $align-item, $wrap){
+@mixin flex-type($direction, $justifyContent, $alignItem, $wrap){
    display: flex;
    flex-direction: $direction;
-   justify-content: $justify-content;
-   align-items: $align-item;
+   justify-content: $justifyContent;
+   align-items: $alignItem;
    flex-wrap: $wrap;
 }
 
@@ -38,6 +40,11 @@ body{
    font-family: 'Roboto', sans-serif;
    font-size: 2rem;
    line-height: 3.2rem;
+   color: $primaryColor;
+}
+
+h1, h2, h3{
+   margin: 0;
 }
 
 ul{
@@ -46,8 +53,17 @@ ul{
 }
 
 img{
-   max-width: 100%;
+   max-width: 80%;
+   display: block;
 }
 
+a{
+   text-decoration: none;
+}
+
+.wrapper{
+   max-width: 80%;
+   margin: 0 auto;
+}
 
 
