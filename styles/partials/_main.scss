@@ -18,6 +18,15 @@
    &--flex-width{
       width: 65%;
    }
+   &--inner-heading{
+      @include page-header(8rem);
+   }
+   &--inner-div{
+      background: #ffffff;
+      padding: 4rem 4rem;
+      border-bottom: 4px solid $secondaryBackground;
+   }  
+   
 }
 
 .container{
@@ -39,15 +48,14 @@
    @include flex-type(row, center, normal, wrap);
    .container{
       width: 50%;
-      padding: 6rem 0 4rem 0;
+      padding: 5rem 0 4rem 0;
       &__heading{
       @include heading-text(3.2rem);
       }
       &--right{
          text-align: right;
       }
-      &__img{
-         max-width: 100%;      
+      &__img{     
          position: relative;
          bottom: 1rem;
          right: 2rem;
@@ -58,7 +66,8 @@
          position: relative;
       } 
       &--rust{
-         background: #a82706;        
+         background: #a82706; 
+         bottom: 2rem;       
       }
       &--oyellow{
          background: $secondaryBackground;
@@ -114,6 +123,19 @@
       width: calc(33% - 4%);
       margin: 2%;
       max-width: 100%;
+   }
+}
+
+.inner-div{
+    &__heading{
+      @include heading-text(3.2rem);
+   }
+   &__info{
+      font-style: italic;
+   }
+   &__author{
+      color: #285e64;
+      font-weight: bold;
    }
 }
 

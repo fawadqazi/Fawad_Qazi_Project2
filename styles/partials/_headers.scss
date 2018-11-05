@@ -1,10 +1,11 @@
 .header__home{
-   min-height: 80vh;
+   min-height: 60vh;
    background: #f6a823;
 }
 
 .nav{
    list-style: none;
+   background: $secondaryBackground;
    @include flex-type(row, center, center, wrap);
    &__link{
       @include heading-text(20px);
@@ -40,4 +41,10 @@
    &__img{
          box-shadow: 1.5rem 1.5rem white;
    }
+}
+
+.header__inner{
+      min-height: 50vh;
+      background: url('../assets/blog-image-1.jpg') no-repeat;
+      background-size: cover;
 }
