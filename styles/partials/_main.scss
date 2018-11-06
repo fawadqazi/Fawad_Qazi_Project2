@@ -25,44 +25,7 @@
       border-bottom: 4px solid $secondaryBackground;
       margin-bottom: 4rem;
    }  
-   &--form{
-      [type="text"], [type="email"], textarea{
-         padding: 1.5rem 3rem;
-         border: none
-      }
-      [type="text"], [type="email"]{
-         width: calc(50% - 3px);
-      }
-
-      [type="submit"], textarea{
-         width: 100%;
-      }
-
-      [type="text"]:focus, [type="email"]:focus, textarea:focus{
-         border: 1px solid $accentColor;
-      }
-
-      [type="submit"]:hover{
-         background: #ffffff;
-         border: 1px solid $accentColor;
-      }
-
-      textarea{
-         margin: 2rem 0;
-         resize: none;
-      }
-
-      textarea::-webkit-input-placeholder,[type="text"]::-webkit-input-placeholder,[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-         color: $primaryColor;
-         font-style: italic;
-      }
-
-      textarea::-moz-placeholder,[type="text"]::-moz-placeholder,[type="email"]::-moz-placeholder { /* Firefox 19+ */
-         color: $primaryColor;
-         opacity: 1;
-         font-style: italic;
-      }
-   }
+   
 }
 
 .container{
@@ -220,13 +183,19 @@
           margin-right: 1rem;
           color: $secondaryBackground;
       }
-      &--social-list-item{
-         display: inline-block;
+      &--social-list{
+         @include flex-type(row, flex-start, normal, wrap);
       }
+      // &--social-list-item{
+      //    display: inline-block;
+      // }
       &--link{
          color: $secondaryBackground;
          margin-right: 2.5rem;
          font-size: 2.4rem;
+      }
+      &--contact-list-item{
+         width: max-content;
       }
       &--contact-link{
          color: $primaryColor;

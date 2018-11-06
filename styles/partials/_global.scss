@@ -61,6 +61,44 @@ a{
    text-decoration: none;
 }
 
+[type="text"], [type="email"], textarea{
+   padding: 1.5rem 3rem;
+   border: none
+}
+
+[type="text"], [type="email"]{
+   width: calc(50% - 3px);
+}
+
+[type="submit"], textarea{
+   width: 100%;
+}
+
+[type="text"]:focus, [type="email"]:focus, textarea:focus{
+   border: 1px solid $accentColor;
+}
+
+[type="submit"]:hover{
+   background: #ffffff;
+   border: 1px solid $accentColor;
+}
+
+textarea{
+   margin: 2rem 0;
+   resize: none;
+}
+
+textarea::-webkit-input-placeholder,[type="text"]::-webkit-input-placeholder,[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: $primaryColor;
+   font-style: italic;
+}
+
+textarea::-moz-placeholder,[type="text"]::-moz-placeholder,[type="email"]::-moz-placeholder { /* Firefox 19+ */
+   color: $primaryColor;
+   opacity: 1;
+   font-style: italic;
+}
+
 .wrapper{
    max-width: 80%;
    margin: 0 auto;
