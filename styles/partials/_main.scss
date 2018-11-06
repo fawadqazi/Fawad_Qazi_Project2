@@ -44,10 +44,12 @@
 }
 
 .section__articles{
-   @include flex-type(row, center, normal, wrap);
+   &--item{
+      @include flex-type(row, center, center, wrap);
+   }
    .container{
       width: 50%;
-      padding: 5rem 0 4rem 0;
+      padding: 2rem 0 4rem 0;
       &__heading{
       @include heading-text(3.2rem);
       }

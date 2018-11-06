@@ -30,6 +30,20 @@
          font-size: 2.7rem;
       }
    }
+   // home page styling
+   .header__content{
+      &__heading{
+         font-size: 10rem;
+      }
+   }
+
+   .section__articles{
+       .container{
+          &--rust,&--oyellow{
+             position: static;
+          } 
+       }
+   }
 }
 
 @media (max-width: 968px) {
@@ -67,6 +81,23 @@
    }
    .blog-comment{
       padding: 4rem 2rem;
+   }
+   // home page styling
+   .header__content{
+      &__heading{
+         font-size: 9rem;
+      }
+   }
+   .section__articles{
+      &--item{
+         flex-direction: column;
+      }
+      .container{
+         width: 80%;
+          &--oyellow{
+            order: 0;   
+          } 
+       }
    }
 }
 
@@ -107,6 +138,11 @@
             max-width: 50%;
             margin: 0 auto 2rem auto;
          }
+      }
+   }
+   .header__content{
+      &__heading{
+         font-size: 7.5rem;
       }
    }
 
