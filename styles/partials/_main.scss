@@ -214,13 +214,31 @@
       &--list{
          margin: 2rem 0;
          padding: 0 0 0 2rem;
-         list-style: none;
       }
       &--list-item::before{
           content: "•";
           margin-right: 1rem;
           color: $secondaryBackground;
       }
+      &--social-list-item{
+         display: inline-block;
+      }
+      &--link{
+         color: $secondaryBackground;
+         margin-right: 2.5rem;
+         font-size: 2.4rem;
+      }
+      &--contact-link{
+         color: $primaryColor;
+      }
+      &--email{
+         font-weight: bold;
+         margin: 1rem 0;
+      }
+      &--address{
+         display: block;
+      }
+
    }
 }
 
