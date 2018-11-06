@@ -170,19 +170,27 @@
       &--heading{
          @include heading-text(2.4rem);
       }
-      &--link{
+      &--more-link{
          color: #285e64;
          font-weight: bold;
       }
       &--list{
-         margin: 2rem 0;
+         margin: 2rem 0 2rem 2rem;
          padding: 0 0 0 2rem;
+         list-style: disc;
+         list-style-position: outside;
+         color: $secondaryBackground;
+      } 
+      &--list-item{
+         a{
+            color: $primaryColor;
+         }
       }
-      &--list-item::before{
-          content: "•";
-          margin-right: 1rem;
-          color: $secondaryBackground;
-      }
+      // &--list-item::before{
+      //     content: "•";
+      //     margin-right: 1rem;
+      //     color: $secondaryBackground;
+      // }
       &--social-list{
          @include flex-type(row, flex-start, normal, wrap);
       }
@@ -193,6 +201,7 @@
          color: $secondaryBackground;
          margin-right: 2.5rem;
          font-size: 2.4rem;
+         font-weight: bold;
       }
       &--contact-list-item{
          width: max-content;
