@@ -99,6 +99,19 @@ textarea::-moz-placeholder,[type="text"]::-moz-placeholder,[type="email"]::-moz-
    font-style: italic;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 .wrapper{
    max-width: 80%;
    margin: 0 auto;

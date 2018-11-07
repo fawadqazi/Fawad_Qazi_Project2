@@ -1,6 +1,19 @@
-.header__home{
-//    min-height: 60vh;
-   background: #f6a823;
+/* humburger menu hidden  */
+input#toggle,label[for="toggle"]{
+	display: none; 
+}
+
+.header__home, .header-nav{
+   background: $secondaryBackground;
+}
+
+.header-nav{
+      &__logo{
+            text-transform: uppercase;
+            @include page-header(4rem);
+            line-height: normal;
+            padding-left: 2rem;
+      }
 }
 
 .nav{
@@ -24,6 +37,10 @@
                color: $primaryColor;
          }
       }
+}
+
+.fa-times{
+      color: #ffffff;
 }
 
 .header__container{

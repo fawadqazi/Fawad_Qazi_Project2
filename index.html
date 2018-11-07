@@ -11,17 +11,23 @@
    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+<!-- SKIP TO MAIN CONTENT -->
+<a href="#maincontent" class="skip-link">Skip to main content.</a>
+   <nav class="header-nav">
+      <!-- Creates a hamburger menu when screen size changes -->
+      <label for="toggle"><i class="fa fa-bars"></i><span class="header-nav__logo">Sophie</span></label>
+      <input type="checkbox" id="toggle" name="toggle">
+      <ul class="nav">
+         <li><label for="toggle"><i class="fas fa-times"></i><span class="visuallyhidden">Exit Navigation</span></label></li>
+         <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+         <li class="nav__item"><a class="nav__link" href="#About">About</a></li>
+         <li class="nav__item"><a class="nav__link nav__link--logo" href="#Home">Sophie</a></li>
+         <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+         <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+   </nav>
    <!-- HEADER STARTS -->
    <header class="header__home">
-      <nav class="header-nav">
-         <ul class="nav">
-            <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="#About">About</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--logo" href="#Home">Sophie</a></li>
-            <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
-            <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
-         </ul>
-      </nav>
       <div class="wrapper">
          <div class="header__container">
             <div class="header__content header__content--heading">
@@ -35,7 +41,7 @@
    </header>
    <!-- HEADER ENDS -->
    <!-- MAIN STARTS -->
-   <main>
+   <main id="maincontent">
       <section class="section__primary">
          <div class="wrapper">
             <div class="container">
