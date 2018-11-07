@@ -143,6 +143,9 @@
          width: 100%;
       }
    }
+   .section__chairs{
+      min-height: 20vh;
+   }
 }
 
 @media (max-width: 650px){
@@ -208,6 +211,9 @@
       &__heading{
          margin-bottom: 0;
       }
+      &__img{
+         max-width: 100%;
+      }
    }
    .section__gallery{
       &--flex{
@@ -267,6 +273,7 @@
       &__heading{
          font-size: 6rem;
       }
+
    }
     .section__primary{
       &--flex-width{

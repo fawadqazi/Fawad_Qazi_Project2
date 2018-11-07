@@ -493,7 +493,7 @@ input#toggle, label[for="toggle"] {
 .section__chairs {
   background: url("../assets/home-image-4.jpg") no-repeat center center;
   width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   background-size: cover; }
 
 .section__gallery--flex {
@@ -750,7 +750,9 @@ input#toggle, label[for="toggle"] {
     -ms-flex-direction: column;
     flex-direction: column; }
     .section__icons .container {
-      width: 100%; } }
+      width: 100%; }
+  .section__chairs {
+    min-height: 20vh; } }
 
 @media (max-width: 650px) {
   label[for="toggle"] {
@@ -806,6 +808,8 @@ input#toggle, label[for="toggle"] {
     width: 100%; }
   .header__content__heading {
     margin-bottom: 0; }
+  .header__content__img {
+    max-width: 100%; }
   .section__gallery--flex {
     max-width: 100%;
     margin: 0; }
