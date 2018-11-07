@@ -1,9 +1,7 @@
 @media (max-width: 1200px){
-   // Contact Page Styling
    input[type="text"], [type="email"]{
        width: 100%;
    }
-
    input[type="text"]{
       margin-bottom: 2rem;
    }
@@ -11,11 +9,13 @@
       .aside__blog{
          &--link{
             margin-right: 2rem;
+            &:hover{
+               color: $accentColor;
+            }
          }
          &--unit{
             display: block;
          }
-         // Blog Page Styling
          &--list{
             margin-left: 0;
          }
@@ -24,19 +24,16 @@
          }
       }
    }
-
    .inner-div{
       &__heading{
          font-size: 2.7rem;
       }
    }
-   // home page styling
    .header__content{
       &__heading{
          font-size: 10rem;
       }
    }
-
    .section__articles{
        .container{
           &--rust,&--oyellow{
@@ -50,7 +47,6 @@
    .wrapper{
       max-width: 90%;
    }
-   // Contact Page Styling
    .section__primary{
       &--inner-heading{
          text-align: center;
@@ -82,7 +78,6 @@
    .blog-comment{
       padding: 4rem 2rem;
    }
-   // home page styling
    .header__content{
       &__heading{
          font-size: 9rem;
@@ -103,7 +98,6 @@
 }
 
 @media (max-width: 768px) {
-   // Contact Page Styling
    .nav__link{
       &--logo{
          padding: 0 2rem;
@@ -179,7 +173,6 @@
    input[type="checkbox"]#toggle:checked + .nav{
     text-align: left;
     display: block;
-   //  background: rgba(0, 0, 0, 0.8);
     min-height: 100vh;
     width: 100%;
     position: fixed;

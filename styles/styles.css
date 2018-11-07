@@ -382,6 +382,9 @@ input#toggle, label[for="toggle"] {
     letter-spacing: 1px;
     color: #2c2c2c;
     font-size: 2rem; }
+    .container__button:hover {
+      background: #ffffff;
+      border: 1px solid #05afc1; }
   .container__content {
     margin: 4rem 0; }
 
@@ -651,6 +654,8 @@ input#toggle, label[for="toggle"] {
     margin-bottom: 2rem; }
   .aside__inner-page .aside__blog--link {
     margin-right: 2rem; }
+    .aside__inner-page .aside__blog--link:hover {
+      color: #05afc1; }
   .aside__inner-page .aside__blog--unit {
     display: block; }
   .aside__inner-page .aside__blog--list {

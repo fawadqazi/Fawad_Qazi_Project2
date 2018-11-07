@@ -37,6 +37,10 @@
       background: $accentColor;
       padding: 1.3rem 4rem;
       @include heading-text(2rem);
+      &:hover{
+         background: #ffffff;
+         border: 1px solid $accentColor;
+      }
    }
    &__content{
       margin: 4rem 0;
@@ -188,17 +192,9 @@
             color: $primaryColor;
          }
       }
-      // &--list-item::before{
-      //     content: "•";
-      //     margin-right: 1rem;
-      //     color: $secondaryBackground;
-      // }
       &--social-list{
          @include flex-type(row, flex-start, normal, wrap);
       }
-      // &--social-list-item{
-      //    display: inline-block;
-      // }
       &--link{
          color: $secondaryBackground;
          margin-right: 2.5rem;
@@ -225,11 +221,9 @@
 .inner_aside, .inner__div{
    margin: 0 2rem;
 }
-
 .inner_aside{
    width: 35%;
 }
-
 .inner__div{
    width: 65%;
 }
