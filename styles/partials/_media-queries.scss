@@ -9,9 +9,6 @@
       .aside__blog{
          &--link{
             margin-right: 2rem;
-            &:hover{
-               color: $accentColor;
-            }
          }
          &--unit{
             display: block;

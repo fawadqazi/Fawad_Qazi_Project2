@@ -618,6 +618,8 @@ input#toggle, label[for="toggle"] {
       margin-right: 2.5rem;
       font-size: 2.4rem;
       font-weight: bold; }
+      .aside__inner-page .aside__blog--link:hover {
+        color: #05afc1; }
     .aside__inner-page .aside__blog--contact-list-item {
       width: -webkit-max-content;
       width: -moz-max-content;
@@ -654,8 +656,6 @@ input#toggle, label[for="toggle"] {
     margin-bottom: 2rem; }
   .aside__inner-page .aside__blog--link {
     margin-right: 2rem; }
-    .aside__inner-page .aside__blog--link:hover {
-      color: #05afc1; }
   .aside__inner-page .aside__blog--unit {
     display: block; }
   .aside__inner-page .aside__blog--list {
