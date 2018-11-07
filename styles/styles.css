@@ -765,8 +765,8 @@ input#toggle, label[for="toggle"] {
       color: #ffffff;
       display: block;
       padding: 3rem 2rem;
-      border-bottom: 2px solid white;
-      font-size: 3.2rem; }
+      font-size: 3.2rem;
+      border-bottom: 2px solid white; }
       .nav__link:hover {
         color: #2c2c2c; }
       .nav__link--logo {
@@ -789,7 +789,7 @@ input#toggle, label[for="toggle"] {
     -ms-flex-direction: column;
     flex-direction: column; }
   .section__primary--flex-width {
-    width: 80%;
+    width: 100%;
     padding: 0 0 5rem 0; }
   .section__primary--img {
     width: 100%;
@@ -816,7 +816,9 @@ input#toggle, label[for="toggle"] {
   .section__gallery--img {
     margin: 0;
     width: 33.33%;
-    display: block; } }
+    display: block; }
+  .section__articles .container-responsive {
+    width: 100%; } }
 
 @media (max-width: 480px) {
   .contact-wrapper {
