@@ -260,6 +260,9 @@
 }
 
 @media (max-width: 350px) {
+   body{
+      font-size: 1.8rem;
+   }
    .header__content{
       &__heading{
          font-size: 6rem;
@@ -268,6 +271,12 @@
     .section__primary{
       &--flex-width{
          width: 90%;
+      }
+   }
+   .blog-comment{
+      flex-direction: column;
+   &__content{
+      width: 100%;
       }
    }
 }

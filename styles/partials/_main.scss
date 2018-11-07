@@ -89,7 +89,7 @@
       @include flex-type(row, space-around, normal, nowrap);
       padding: 0;
       width: calc(50% - 2%);
-      div{
+      .container-icon{
          margin-left: 4%;
       }
       &__heading{
@@ -103,6 +103,9 @@
          background: $secondaryBackground;
          border-radius: 50%;
          color: $primaryColor;
+         &:hover{
+            color: #ffffff;
+         }
       }
    }
 }
@@ -144,6 +147,7 @@
    &__author{
       color: #285e64;
       font-weight: bold;
+      font-style: italic;
    }
 }
 
