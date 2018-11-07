@@ -269,8 +269,10 @@ input#toggle, label[for="toggle"] {
       line-height: 92px;
       font-size: 4.2rem;
       padding: 0 4rem; }
-    .nav__link--logo:hover {
-      color: #2c2c2c; }
+      .nav__link--logo:hover {
+        color: #2c2c2c; }
+    .nav__link--active {
+      color: #ffffff; }
 
 .fa-times {
   color: #ffffff; }

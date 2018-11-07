@@ -26,17 +26,20 @@ input#toggle,label[for="toggle"]{
       color: $primaryColor;
       // display: inline-block;
       padding: 0 2rem;
-      &:hover{
-            color: #ffffff;
-      }
+		&:hover{
+			color: #ffffff;
+		}
       &--logo{
-         @include page-header(4.2rem);
-         padding: 0 4rem;
-         }
-         &--logo:hover{
-               color: $primaryColor;
+      @include page-header(4.2rem);
+      padding: 0 4rem;
+      &:hover{
+         color: $primaryColor;
          }
       }
+      &--active{
+         color: #ffffff;
+      }
+   }
 }
 
 .fa-times{
